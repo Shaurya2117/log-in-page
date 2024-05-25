@@ -18,14 +18,16 @@ body {
 }
 
 .wrapper {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     border-radius: 10px;
-    padding: 30px 40px;
+    padding: 30px 20px;
+    margin: 20px;
 }
 
 .wrapper h1 {
@@ -115,7 +117,51 @@ body {
 }
 
 .password-suggestion {
-    font-size: 12px;
+    font-size: 10px;
     color: #eeeeee;
     margin-top: -20px;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px 15px;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+    }
+
+    .wrapper .input-container input {
+        font-size: 14px;
+    }
+
+    .wrapper .btn {
+        font-size: 14px;
+    }
+
+    .wrapper .register-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 15px 10px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px;
+    }
+
+    .wrapper .input-container input {
+        font-size: 12px;
+    }
+
+    .wrapper .btn {
+        font-size: 13px;
+    }
+
+    .wrapper .register-link {
+        font-size: 12px;
+    }
 }
